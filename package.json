@@ -1,7 +1,7 @@
 {
   "name": "gmail",
   "version": "0.1.0",
-  "homepage": "https://parparvaz.github.io/gmail",
+  "homepage": "https://parparvaz.github.io/react-gmail-v.1/",
   "private": false,
   "dependencies": {
     "@emotion/react": "^11.9.3",
