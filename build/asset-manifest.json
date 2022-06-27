@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/gmail/static/css/main.b16c053d.css",
+    "main.js": "/gmail/static/js/main.07f04513.js",
+    "index.html": "/gmail/index.html",
+    "main.b16c053d.css.map": "/gmail/static/css/main.b16c053d.css.map",
+    "main.07f04513.js.map": "/gmail/static/js/main.07f04513.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b16c053d.css",
+    "static/js/main.07f04513.js"
+  ]
+}
