@@ -8,9 +8,13 @@ import {
 } from 'react-router-dom'
 import Mail from "./component/Mail/Mail";
 import EmailList from "./component/EmailList/EmailList";
+import SendMail from "./component/SendMail/SendMail";
+import {useSelector} from 'react-redux'
+import {selectSendMessageIsOpen} from "./store/reducer/mailReducer";
 
 
 const App = () => {
+    const sendMessageIsOpen = useSelector(selectSendMessageIsOpen)
 
     return (
         <BrowserRouter>
@@ -19,10 +23,11 @@ const App = () => {
                 <Sidebar/>
                 <Routes>
                     <Route path="/" exact element={<EmailList/>}/>
-                    <Route path="mail" element={<Mail/>} />
+                    <Route path="mail" element={<Mail/>}/>
 
                 </Routes>
             </div>
+            {sendMessageIsOpen && (<SendMail/>)}
         </BrowserRouter>
     )
 }
